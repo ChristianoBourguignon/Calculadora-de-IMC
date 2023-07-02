@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {Vibration} from 'react-native';
 
 export default function calcIMC() {
 const [height, setHeight] = useState(null);
@@ -37,6 +38,7 @@ function validationImc() {
   setShowErrorMessage(true);
   setShowStyles(true);
   setImc(null);
+  Vibration.vibrate()
   setTextButton('Calcular');
   setMessageImc('Preencha corretamente sua altura e seu peso');
 }
