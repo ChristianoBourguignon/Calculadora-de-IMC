@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Title() {
   return (
     <View style={styles.boxTitle}>
-      <Text style={styles.tituloH1}>Projeto do Curso</Text>
+      <Text style={styles.tituloH1}>Calculadora de IMC</Text>
     </View>
   );
 }
